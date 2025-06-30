@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Quicksand', sans-serif;
+  background-color: #f6f3f9; /* Lavanda clara */
+  color: #4a3b57; /* Roxo suave */
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Esconde seções com .hidden */
+.hidden {
+  display: none;
+}
+
+/* Layout das seções como "telas" de app */
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Conteúdo centralizado e com padding confortável */
+.conteudo-inicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #775a8d;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.5rem;
+  color: #5e4b7d;
+}
+
+/* Frase do dia */
+#frase-do-dia {
+  font-style: italic;
+  color: #7b6992;
+  margin-bottom: 1rem;
+}
+
+/* Texto final explicativo */
+.texto-final {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Parágrafos */
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  color: #4a3b57;
+}
+
+/* Botões*/
+button {
+  background-color: #d3bce7;
+  color: #3b2b4d;
+  border: none;
+  padding: 0.9rem 1.2rem;
+  margin: 0.4rem 0;
+  border-radius: 1.2rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #bda2d9;
+  transform: scale(1.02);
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* Centraliza o vídeo quando a largura máxima é atingida */
+  aspect-ratio: 16 / 9;
+  height: auto;
+  overflow: hidden; /* Garante que nada transborde */
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividade*/
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  button {
+    max-width: 400px;
+  }
+}
