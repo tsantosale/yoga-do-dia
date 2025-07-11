@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yoga do Dia</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga do Dia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Tela 1: Escolha do canal -->
+      <section id="tela-inicial">
+        <div class="conteudo-inicial">
+          <h1>Yoga do Dia</h1>
+          <p id="frase-do-dia"></p>
+          <h2>Escolha seu canal favorito ⬇️</h2>
+          <button onclick="escolherCanal('Pri Leite Yoga')">
+            Pri Leite Yoga
+          </button>
+          <button onclick="escolherCanal('Longevidade Yoga')">
+            Longevidade Yoga
+          </button>
+          <button onclick="escolherCanal('Fernanda Yoga')">
+            Fernanda Yoga
+          </button>
+          <p class="texto-final">🧘</p>
+          <p>
+            A prática de yoga ajuda a aliviar tensões do corpo e da mente,
+            melhorando a postura, o foco e o bem-estar mesmo após longos
+            períodos sentados.
+          </p>
+        </div>
+      </section>
 
-    <!-- Tela 1: Escolha do canal -->
-    <section id="tela-inicial">
-      <div class="conteudo-inicial">
-        <h1>Yoga do Dia</h1>
-        <p id="frase-do-dia"></p>
-        <h2>Escolha seu canal favorito ⬇️</h2>
-        <button onclick="escolherCanal('Pri Leite Yoga')">Pri Leite Yoga</button>
-        <button onclick="escolherCanal('Longevidade Yoga')">Longevidade Yoga</button>
-        <button onclick="escolherCanal('Fernanda Yoga')">Fernanda Yoga</button>
-        <p class="texto-final">🧘</p>
-        <p>A prática de yoga ajuda a aliviar tensões do corpo e da mente, melhorando a postura, o foco e o bem-estar mesmo após longos períodos sentados.</p>
-      </div>
-    </section>
+      <!-- Tela 2: Exibição do vídeo -->
+      <section id="tela-video" class="hidden">
+        <h2 id="nome-canal"></h2>
+        <div class="video-container">
+          <iframe id="video-yoga" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div>
+          <button onclick="trocarAula()">Trocar aula</button>
+          <button onclick="voltar()">Voltar</button>
+        </div>
+      </section>
+    </main>
 
-    <!-- Tela 2: Exibição do vídeo -->
-    <section id="tela-video" class="hidden">
-      <h2 id="nome-canal"></h2>
-      <div class="video-container">
-        <iframe id="video-yoga" frameborder="0" allowfullscreen></iframe>
-      </div>  
-      <div>
-        <button onclick="trocarAula()">Trocar aula</button>
-        <button onclick="voltar()">Voltar</button>
-      </div>
-    </section>
-
-  </main>
-  <script src="script.js"></script>
-</body>
+    <footer>
+      <p>
+        Copyright &lt;ALE TORRES /&gt; 2025. Feito com ❤ por Alessandra Torres.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', 'Quicksand', sans-serif;
+  font-family: "Segoe UI", "Quicksand", sans-serif;
   background-color: #f6f3f9; /* Lavanda clara */
   color: #4a3b57; /* Roxo suave */
   height: 100vh;
@@ -19,7 +19,10 @@ main {
   align-items: center;
   justify-content: center;
 }
-
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
 /* Esconde seções com .hidden */
 .hidden {
   display: none;
